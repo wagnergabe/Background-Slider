@@ -1,0 +1,1 @@
+<h1>Create a background image that reflects the current container</h1>
