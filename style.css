@@ -13,7 +13,7 @@ body {
     background-image: url('https://images.unsplash.com/photo-1570641963303-92ce4845ed4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
     background-position: center center;
     background-size: cover;
-    transition: 0.4s
+    transition: 0.4s;
 }
 
 body::before {
@@ -23,7 +23,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: (0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
 
@@ -35,15 +35,16 @@ body::before {
     overflow: hidden
 }
 
-.slide{
+.slide { 
     opacity: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 50vh;
+    width: 50vw;
     background-position: center center;
     background-size: cover;
     position: absolute;
-    top: -15vh;
-    left: -15vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: 0.4s ease;
     z-index: 1;
 }
